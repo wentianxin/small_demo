@@ -1,14 +1,18 @@
+*.class
+*.o
+*.out
+*.obj
+*.elf
 
-
-/Java/mybatis/*
-spring/*
-structs/*
-test/*
-
-
+.idea/
+target/
+out/
+classes/
 
 !src/
 !.gitignore
 !*.xml
 !README.md
+
+
 

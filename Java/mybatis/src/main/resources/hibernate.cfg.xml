@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/db_hackerspace</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.pool_size">20</property>
+        <property name="hibernate.connection.autocommit">true</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <mapping class="com.hackerspace.dao.Classroom"/>
+        <mapping class="com.hackerspace.dao.Course"/>
+        <mapping class="com.hackerspace.dao.CrApply"/>
+        <mapping class="com.hackerspace.dao.Elective"/>
+        <mapping class="com.hackerspace.dao.SdApply"/>
+        <mapping class="com.hackerspace.dao.Studio"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
