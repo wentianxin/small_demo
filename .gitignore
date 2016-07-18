@@ -1,3 +1,14 @@
-/*
 
-Java/
+
+/Java/mybatis/*
+spring/*
+structs/*
+test/*
+
+
+
+!src/
+!.gitignore
+!*.xml
+!README.md
+
